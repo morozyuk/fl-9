@@ -1,0 +1,178 @@
+@media print {
+    .tm-sidebar{
+        display: none;
+    }
+    .tm-banner-inner{
+        width: 900px;
+        height: 250px;
+        margin-left: -420px;
+    }
+    .tm-banner-inner img{
+        width: 150px;
+    }
+    .tm-banner-text{
+        font-size: 30px;
+    }
+    .pad h2{
+        color:blue;
+        float:none;
+        margin-left: -400px;
+        margin-top: -120px;
+        font-size: 45px;
+    }
+    .tm-section-description{
+        width: 750px;
+        float: none;
+        margin-left: -400px;
+        font-size: 23px;
+    }
+    .flex-item img {
+        position: absolute;
+        float: none;
+        top: 250px;
+        right: 280px;
+        width: 350px;
+    }
+    .tm-footer{
+        position: absolute;
+        font-size: 22px;
+        width: 600px;
+        top: 1250px;
+        right: 170px;
+    }
+    #about{
+        display: none;
+    }
+    .heading{
+        display: none;
+    }
+    .blocks{
+        display: none;
+    }
+    #ideas{
+        display: none;
+    }
+    .img-fluid{
+        display: none;
+    }
+    #contact{
+        display: none;
+    }
+    .tm-content-box:after {
+        display: none;
+    }
+    .flex-2-col p:first-letter{
+       display: none;
+    }
+
+}
+.thumbnail{
+    border-radius: 150px;
+}
+.box-bg:hover{
+    background: rgb(49,176,213);
+    color: #fff;
+}
+.box-bg:hover h2{
+    color: white;
+    font-weight: 900;
+}
+.flex-2-col p:first-letter{
+    color: #76cdd7;
+    font-size: 30px;
+}
+.flex-item p:first-letter{
+    color: #76cdd7;
+    font-size: 30px;
+}
+
+.tm-sidebar{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.tm-content-box{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.tm-content-box {
+    position: relative;
+}
+.tm-content-box:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 30px solid deepskyblue;
+    border-right: 150px solid transparent;
+    z-index: 10;
+}
+
+.flex-2-col:nth-child(2):after{
+    display: none;
+}
+.carousel-content h2{
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+.tm-main-content h2+p{
+    font-style: italic;
+
+}
+.flex-2-col h2+p{
+    line-height: 30px;
+    text-indent: 20px;
+}
+.pad li:visited{
+    color:silver;
+}
+.pad ol li:first-letter:after:hover{
+    border-bottom: 1px double;
+
+}
+.pad li :hover{
+    color: blue;
+    border-bottom: 1px double;
+}
+.text:after{
+    content: 'NEW';
+    color : red;
+    font-size: 8px;
+    position: absolute;
+    margin-bottom: 10px;
+}
+.box div{
+    height: 250px;
+}
+
+.blocks ul li:nth-child(odd) {
+    background: lightgrey;
+}
+.gallery-container p:first-letter{
+    font-size: 30px;
+    color: black;
+}
+.tm-main-nav ul li{
+    border-bottom: 2px dotted silver;
+}
+.tm-main-nav ul li:last-child{
+    border-bottom: none;
+}
+input[type] {
+    color: red;
+}
+#contact_message {
+    color: red;
+}
+.submit-btn{
+    color: red;
+}
+.mandatory-field:after {
+    content: "*";
+    color: red;
+    font-weight: 600;
+}
+.submit-btn:hover{
+    background-color: deepskyblue;
+}
+/*
+
+write your code here
+*/
