@@ -1,0 +1,165 @@
+html{
+  background-color: $backgroundColor;
+}
+.logo{
+  img{
+    width: 600px;
+    margin-left: 100px;
+  }
+}
+nav{
+  position: relative;
+  top: -140px;
+  width: 930px;
+  margin-left: 800px;
+  word-spacing: 160px;
+  text-indent: 80px;
+  border-top: 1px solid black;
+  padding-top: 22px;
+  border-bottom: 1px solid black;
+  padding-bottom: 22px;
+  a{
+    font-size:40px;
+    color: $navLinkColor;
+    text-decoration: none;
+    font-family: $fontFamily;
+    text-transform: uppercase;
+  }
+}
+.toolbar{
+  position: relative;
+  left: 76%;
+  top: -80px;
+  border: 1px solid $navLinkColor;
+  width: 294px;
+  font-family: $fontFamily;
+  ::placeholder{
+    color:$navLinkColor;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  input{
+    padding: 20px;
+    width: 250px;
+    color: $navLinkColor;
+  }
+}
+.post-list{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  height: auto;
+  article{
+    width: 600px;
+    background-color: $art;
+    float: left;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    img{
+      width: 570px;
+      padding: 15px;
+    }
+    h3{
+      color: $descriptionNameColor;
+      font-family: $fontFamily;
+      text-transform: uppercase;
+      margin-left: 15px;
+    }
+    p{
+      font-family: $fontFamily;
+      color: $descriptionText;
+      line-height: 25px;
+      margin: -15px  15px 30px 15px;
+    }
+    .post-description{
+      font-family: $fontFamily;
+      color: $descriptionColor;
+      margin: 0 15px;
+      padding-bottom: 10px;
+      font-size: 15px;
+      border-bottom: 1px solid $descriptionBorderColor;
+
+    }
+  }
+}
+.about {
+  clear: left;
+  h1 {
+    color: $aboutNameColor;
+    font-family: $fontFamily;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: right;
+    margin-right: 290px;
+  }
+  p{
+    font-family: $fontFamily;
+    color: $aboutTextColor;
+    font-size: 20px;
+    word-spacing: 5px;
+    width: 75%;
+    margin-left: 200px;
+  }
+  img{
+    width: 75%;
+    margin-left: 200px;
+  }
+}
+.contact-form{
+  h1{
+    font-family: $fontFamily;
+    color: $aboutNameColor;
+    font-size: 35px;
+    text-align: right;
+    margin-right: 270px;
+  }
+  h4{
+    color: $formNameColor;
+    font-family: $fontFamily;
+    text-align: right;
+    margin-right: 270px;
+    margin-top: -30px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .form-control{
+    width: 75%;
+    margin-left: 180px;
+    padding: 20px;
+    border: 1px solid $descriptionBorderColor;
+    margin-bottom: 10px;
+  }
+  input[type] {
+    color: $descriptionBorderColor;
+    font-family: $fontFamily;
+    font-size: 20px;
+  }
+  textarea{
+    color: $descriptionBorderColor;
+    font-family: $fontFamily;
+    font-size: 20px;
+  }
+  button{
+    width: 300px;
+    padding: 20px;
+    margin-left: 71%;
+    background-color: $aboutNameColor;
+    border: 1px solid $aboutNameColor;
+    font-family: $fontFamily;
+    color: $buttonColor;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  button:hover{
+    background-color: deepskyblue;
+  }
+}
+footer{
+  span{
+    font-family: $fontFamily;
+    color: $spanColor;
+    margin-left: 180px;
+  }
+}
