@@ -11,10 +11,10 @@ header {
     top: 5%;
     margin-left: 2%; }
   header .menu {
-    width: 25%;
+    width: 30%;
     font-weight: 500;
     font-family: 'Open Sans',sans-serif;
-    margin-left: 60%;
+    margin-left: 65%;
     position: absolute;
     display: flex;
     justify-content: space-between; }
@@ -48,7 +48,7 @@ header {
 .home .homeBtn {
   display: flex;
   justify-content: center;
-  margin-top: 8%; }
+  margin-top: 6%; }
   .home .homeBtn button {
     padding: 15px;
     width: 12%;
@@ -93,9 +93,9 @@ header {
         transition: all 0.5s ease; }
       .articles div .box .number {
         position: absolute;
-        margin-left: 48%;
+        margin-left: 47%;
         padding: 10px;
-        width: 3%;
+        width: 3.5%;
         color: white;
         font-family: 'Open Sans', sans-serif;
         background-color: #343638;
@@ -162,8 +162,8 @@ footer .footerWrapper {
   display: flex;
   justify-content: space-between; }
   footer .footerWrapper div {
-    width: 40%;
-    padding: 5%; }
+    width: 50%;
+    padding: 4%; }
     footer .footerWrapper div p {
       font-family: 'Open Sans', sans-serif;
       color: #9E9E9E; }
@@ -175,7 +175,7 @@ footer .footerWrapper {
   footer .footerWrapper .footerInput {
     height: 50px;
     margin-top: 1.5%;
-    width: 57%;
+    width: 60%;
     font-family: 'Open Sans', sans-serif;
     border: 1px solid #343638;
     background-color: #E8E8E8;
@@ -186,7 +186,7 @@ footer .footerWrapper {
     height: 55px;
     margin-top: 1.4%;
     margin-left: -1%;
-    width: 38%;
+    width: 35%;
     font-family: 'Open Sans', sans-serif;
     background-color: #000;
     color: #FFF;
