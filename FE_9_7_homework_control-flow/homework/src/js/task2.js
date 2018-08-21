@@ -9,7 +9,6 @@ if(playGame) {
     while (playGame === true) {
         let numberOfAttemps = 0;
         const magicNumber = Math.floor(Math.random() * maxMagicNumber);
-        console.log(magicNumber);
         while (numberOfAttemps < 3) {
             numberOfAttemps++;
             let userNumber ;
