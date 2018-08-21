@@ -51,9 +51,10 @@ if(playGame) {
                 break;
             } else if (numberOfAttemps === 3 && magicNumber !== +userNumber) {
                 alert('Thank you for a game. Your prize is: 0$');
-                prize1=0;
-                prize2=0;
-                prize3=0;
+                prize1 = +'10';
+                prize2 = +'5';
+                prize3 = +'2';
+                total = 0;
                 playGame = confirm('Would you like to play again?');
                 maxMagicNumber= +'5';
                 break;
