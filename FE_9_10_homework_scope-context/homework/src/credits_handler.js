@@ -5,8 +5,8 @@ function userCard(number){
     let key =number;
     let operationType;
     function getCardOptions(){
-        console.log(` balance : ${balance} transaction Limit : ${transactionLimit} history Logs : ${historyLogs}
-         key ${key}`)
+        return ` balance : ${balance} transaction Limit : ${transactionLimit} history Logs : ${historyLogs}
+         key ${key}`
     }
    function putCredits(amount){
         balance += amount;
