@@ -37,9 +37,9 @@ function userCard(number){
             let hundred=100;
             let amountOfPerCentes=0.5;
             let comision=amount/hundred*amountOfPerCentes;
-            this.take(amount);
-            card.put(amount-comision);
-            return console.log(`card that balance ${card.retBalance()}`);
+            this.takeCredits(amount);
+            card.putCredits(amount-comision);
+            return console.log(`card that balance ${card.getBalance()}`);
         }
     }
     function saveLog(operationType,amount) {
@@ -50,12 +50,12 @@ function userCard(number){
         return balance;
     }
     return{
-        get: getCardOptions,
-        put: putCredits,
-        take: takeCredits,
-        set:setTransactionLimit,
-        transfer: transferCredits,
-        retBalance: getBalance
+        getCardOptions: getCardOptions,
+        putCredits: putCredits,
+        takeCredits: takeCredits,
+        setTransactionLimit: setTransactionLimit,
+        transferCredits: transferCredits,
+        getBalance: getBalance
     }
 }
 class UserAccount{
@@ -65,19 +65,14 @@ class UserAccount{
         this.maxCards = 3;
     }
 
-    addCard(key){
+    addCard(){
         if(this.cards.length>=this.maxCards){
             console.log(`too many cards`)
         }else{
-            this.cards.push(userCard(key));
+            this.cards.push(userCard(this.cards.length + 1));
         }
     }
-    getInformationAboutSetOfCards(keys) {
-        for(let i = +'0'; i<keys.length;i++) {
-            this.cardByKey(keys[i]);
-        }
-    }
-    cardByKey(key){
-         this.cards[key-1].get();
+    getCardByKey(key) {
+        return this.cards[key - 1];
     }
 }
