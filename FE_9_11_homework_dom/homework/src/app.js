@@ -1,17 +1,8 @@
-// var rootNode = document.getElementById("root");
-//
-// // Your code goes here
-//
-// rootNode.appendChild(/* Append your list item node*/);
-let node = document.createElement('LI');
-let textnode = document.createTextNode('Water');
-node.appendChild(textnode);
-document.getElementById('list').appendChild(node);
 let input=document.getElementById('input');
 let buttonAdd=document.getElementById('buttonAdd');
 let counter = 0;
 let ten =10;
-let eleven =11;
+let twentyOne =21;
 buttonAdd.onclick =function (){
     if(input.value ===''){
         buttonAdd.disabled;
@@ -49,11 +40,11 @@ buttonAdd.onclick =function (){
         });
         ulOur.addEventListener('dragover', event => {
             if (event.target.className === 'default_filter') {
-                event.preventDefault();
                 let zero = 0;
                 let half = 2;
-                let bounding = event.target.getBoundingClientRect();
-                let set = bounding.y + bounding.height / half;
+                event.preventDefault();
+                let bound = event.target.getBoundingClientRect();
+                let set = bound.y + bound.height / half;
                 if (event.clientY - set > zero) {
                     event.target.style['border-top'] = '';
                     event.target.style['border-bottom'] = '1px dashed #ccc';
@@ -62,10 +53,6 @@ buttonAdd.onclick =function (){
                     event.target.style['border-bottom'] = '';
                 }
             }
-        });
-        ulOur.addEventListener('dragleave', event => {
-            event.target.style['border-bottom'] = '';
-            event.target.style['border-top'] = '';
         });
         ulOur.addEventListener('drop', event => {
             if (event.target.className === 'default_filter') {
@@ -79,8 +66,12 @@ buttonAdd.onclick =function (){
                 }
             }
         });
+        ulOur.addEventListener('dragleave', event => {
+            event.target.style['border-bottom'] = '';
+            event.target.style['border-top'] = '';
+        });
     }else if(counter === ten){
-        counter = eleven;
+        counter = twentyOne;
         buttonAdd.disabled;
         input.value = '';
         let newElement = document.getElementById('newEl');
