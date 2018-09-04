@@ -2,7 +2,6 @@ let input=document.getElementById('input');
 let buttonAdd=document.getElementById('buttonAdd');
 let counter = 0;
 let ten =10;
-let twentyOne =21;
 buttonAdd.onclick =function (){
     if(input.value ===''){
         buttonAdd.disabled;
@@ -25,6 +24,8 @@ buttonAdd.onclick =function (){
         li.appendChild(iconDelete);
         document.getElementById('list').append(li);
         console.log(counter);
+        let newElement = document.getElementById('newEl');
+        newElement.style.display = 'none';
         iconCheck.onclick = function () {
             iconCheck.innerText = 'check_box';
         };
@@ -71,7 +72,6 @@ buttonAdd.onclick =function (){
             event.target.style['border-top'] = '';
         });
     }else if(counter === ten){
-        counter = twentyOne;
         buttonAdd.disabled;
         input.value = '';
         let newElement = document.getElementById('newEl');
