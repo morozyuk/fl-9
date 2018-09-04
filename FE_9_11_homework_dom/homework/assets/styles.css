@@ -1,0 +1,43 @@
+#title{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+#input{
+    width: 80%;
+    margin-left: 3%;
+    border: 1px solid black;
+    padding: 0.7% 0;
+    margin-right: 3%;
+    float : left;
+}
+button{
+    background-color: black;
+    color: white;
+    border-color: transparent;
+}
+.line{
+    border: 1px solid black;
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+.default_filter{
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+}
+#newEl{
+    display: none;
+    font-size: 15px;
+    justify-content: center;
+}
+.material-icons{
+    padding-right: 1%;
+}
+.iconDelete{
+   position: absolute;
+    left: 85%;
+}
