@@ -76,7 +76,6 @@ buttonAdd.onclick =function (){
         input.value = '';
         let newElement = document.getElementById('newEl');
         newElement.style.display = 'flex';
-
     }
     input.value = '';
 };

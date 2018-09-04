@@ -41,3 +41,13 @@ button{
    position: absolute;
     left: 85%;
 }
+footer{
+    display: flex;
+    justify-content: center;
+}
+.cat_pow{
+    position: absolute;
+    top: 75%;
+    width: 100px;
+    height: 100px;
+}
