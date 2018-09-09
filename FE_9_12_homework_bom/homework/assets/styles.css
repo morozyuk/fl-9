@@ -1,0 +1,38 @@
+/* Your styles go here */
+.title{
+    display: flex;
+    justify-content: center;
+}
+.but{
+    display: flex;
+    justify-content: center;
+}
+#part2{
+    display: none;
+}
+#part3{
+    display: none;
+}
+#forInput{
+    display: flex;
+    justify-content: center;
+}
+#forInputMod{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+#list{
+    list-style-type: none;
+    text-align: center;
+}
+.text{
+    border: none;
+    background-color: transparent;
+}
